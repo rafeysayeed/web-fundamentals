@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentals</title>
+        <link rel="stylesheet" href="f.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>HTML Fundamentals</h1>
+
+        <p>List of commonly used tags</p>
+        <ul>
+            <li>h1-h6</li>
+            <li>p</li>
+            <li>ul/ol: li</li>
+            <li>img</li>
+            <li>div: as a container for other elements, allowing you to group them together and apply styles</li>
+            <li>span: to apply styles or behaviors to a specific part of a text without affecting the surrounding content</li>
+            <li>form: input, label, textarea, select, option</li>
+            <li>table: thead, tbody, tr, th, td</li>
+            <li>structure: html, head, body, link, meta, title</li>
+            <li>semantic: header, footer, main, nav, section, article, aside</li>
+            <li>text formatting: b, i, em, del, ins, sup, sub</li>
+        </ul>
+
+        <p>Types of tags</p>
+        <ul>
+            <li>Block: address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1-h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video</li>
+            <li>Inline: a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var</li>
+        </ul>
+
+        <p>Headings</p>
+        <h1>This is Heading 1.</h1>
+        <h2>This is Heading 2.</h2>
+        <h3>This is Heading 3.</h3>
+        <h4>This is Heading 4.</h4>
+        <h5>This is Heading 5.</h5>
+        <h6>This is Heading 6.</h6>
+
+        <p>This is a paragraph.</p>
+
+        <p>Lists</p>
+        <ul>
+            Can I write text within a list? Yes I can!
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+        </ul>
+        <ol type="I" start="5" reversed>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+            <li value="10"></li>
+        </ol>
+        <dl>
+            <dt>Term 1</dt>
+            <dd>Definition 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition 2</dd>
+        </dl>
+
+        <p>Images</p>
+        <img
+            src="url.png"
+            alt="alternateText"
+            srcset="
+                image-small.jpg 300w,
+                image-medium.jpg 600w,
+                image-large.jpg 1200w
+            "
+            sizes="
+                (max-width: 600px) 300px,
+                (max-width: 1200px) 600px,
+                1200px
+            "
+        />
+        <img
+            src="image.png"
+            alt="A beautiful landscape"
+            title="Sunset on a tropical island"
+            width="30%"
+            height="300px"
+            style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)"
+            usemap="#image-map"
+        />
+        <br>
+
+        <p>Divs & Spans</p>
+        <div id="" class="" style="font-weight: bold" title="">
+            align is for text align
+        </div>
+        <p>
+            This is a
+            <span id="" class="highlight" style="color: red" title="">
+            very important
+            </span>
+            announcement.
+        </p>
+
+        <p>Forms</p>
+        <form action="/action" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="John">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>Tables</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column H1</th>
+                    <th>Column H2</th>
+                    <th>Column H3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R1C1</td>
+                    <td>R1C2</td>
+                    <td>R1C3</td>
+                </tr>
+                <tr>
+                    <td>R2C1</td>
+                    <td>R2C2</td>
+                    <td>R2C3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

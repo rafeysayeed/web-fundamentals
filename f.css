@@ -1,0 +1,82 @@
+/*
+    || CSS Properties ||
+    // Layout
+    display: inline(d), inline-block, block
+    position: static(d), relative, absolute, fixed
+    top, right, bottom, left: (d=auto) 0px
+    width, height: (d=auto) 0px
+    margin: (d=0) 0px
+    padding: (d=0) 0px
+    // Box Model
+    border: (d=none) 0px
+    border-width: (d=medium) 0px
+    border-style: (d=none) solid, dashed, dotted
+    border-color: (d=#000) 
+    border-radius: (d=0) 0px
+    // Text
+    text-align: left(d), right, center, justify
+    font-size: (d=medium(16px)) 0px
+    font-weight: normal(d), bold
+    font-family: {Arial, Helvetica, ...}, {serif(d), sans-serif}
+    text-decoration: none(d), underline
+    text-transform: none(d), uppercase, lowercase
+    text-indent: 0
+    text-shadow: none(d), #000
+    // Background
+    background-color: (d=transparent)
+    background-image: none
+    background-repeat: repeat(d), no-repeat
+    background-position: 0 0
+    // Visibility
+    opacity: (d=1)
+    visibility: visible(d), hidden
+    overflow: visible(d), hidden
+
+    || CSS Functions ||
+    // Color
+    rgb(r, g, b)
+    hsl(h, s, l)
+    calc(100% - 10px) // 100% of parent element
+    min(100%, 300px)
+    max(100%, 300px)
+    url(image.png)
+    attr(href)
+    var(--color)
+
+    || CSS Units ||
+    // Absolute
+    px
+    pt
+    pc
+    mm
+    cm
+    in
+    // Relative
+    % // parent element
+    em // font-size of element
+    rem // font-size of root element
+    ch // character width of element
+    ex // character height of element
+    // Responsive
+    vw // 1% of viewport width
+    vh // 1% of viewport height
+
+    || CSS Pseudo-elements ||
+    :before
+    :after
+    // Example
+    .link:after { content: ""; background-image: url("icon.png"); }
+    //
+    :first-child
+    :last-child
+    :nth-child(2)
+    :hover
+    :focus
+    :visited
+    :active
+    :checked
+    :disabled
+    :optional
+    :required
+    :target
+ */
