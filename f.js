@@ -212,6 +212,7 @@ async function asyncfunction() {
 asyncfunction();
 
 // Events
+// onclick, onmouseover, onmouseout, onkeydown, onload, onchange, onscroll
 
 // this
 

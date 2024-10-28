@@ -128,5 +128,25 @@
                 </tr>
             </tbody>
         </table>
+
+        <p>Events</p>
+        <button onclick="call()">Click</button>
+        <p id="demo">Demo Para</p>
+        <a href="#" onclick="this.textContent = Date()">Click to change</a>
+        <button onclick="call(this)">Magic</button>
+        <button id="myBtn">Assigned in backend</button>
+        <p id="gp">Guinea Pig</p>
+        <script>
+            function call() {
+                document.getElementById('demo').innerHTML = "Changed";
+            }
+            function call(id) {
+                id.innerHTML = 'changed';
+            }
+            document.getElementById("myBtn").onclick = changeSomething;
+            function changeSomething() {
+                document.getElementById('gp').innerHTML = "Splash";
+            }
+        </script>
     </body>
 </html>
