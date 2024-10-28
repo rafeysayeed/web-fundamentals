@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./assets/portrait.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- 
+            header
+            hero: intro, about
+            section: projects, skills
+            footer: contacts
+         -->
+        <nav class="navBar">
+            <div>
+                <a href="#" class="logo">John Doe</a>
+            </div>
+            <div>
+                <ul class="navList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="topLine">Portfolio Website</h1>
+
+        <section class="container flex-container outline">
+
+            <div>
+                <h2>
+                    Welcome to my portfolio!
+                </h2>
+                <p>Here, you'll find a showcase of my latest projects, skills, and experiences.<br>
+                    I am passionate about web development and continuously strive to improve my craft.<br>
+                    Explore my work and feel free to reach out if you have any questions or opportunities.</p>
+            </div>
+            <div>
+                <img src="./assets/portrait.png" alt="MyPortrait" class="portrait">
+            </div>
+        </section>
+
+        <section class="container outline" id="work" style="text-align: center;">            
+            <h2>Work Done</h2>
+            <div class="carousel">
+                <button class="carousel-button left" onclick="prevImage()">&#10094;</button>
+                <img src="./assets/gallery.png" alt="scenery" class="carousel-image">
+                <button class="carousel-button right" onclick="nextImage()">&#10095;</button>
+            </div>
+            <h3 id="projectNo">Project</h3>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div>
+                    <h2 style="margin: 5px;">Get in touch</h2>
+                    <div class="contactInfo">
+                        <p>Phone: +123456789</p>
+                        <p>Email: johndoe@mail.com</p>
+                        <p>Location: City, State, Country</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

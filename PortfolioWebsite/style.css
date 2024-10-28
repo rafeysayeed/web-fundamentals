@@ -1,0 +1,124 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    background-color: pink;
+}
+
+.navBar {
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navList li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navList li a:hover {
+    text-decoration: underline;
+}
+
+.topLine {
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outline {
+    padding: 50px;
+}
+
+.portrait {
+    height: 270px;
+    width: 240px;
+}
+
+.contact {
+    background-color: darkblue;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding: 50px; */
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.contactInfo p {
+    margin-left: 15px;
+}
+
+.gallery {
+    height: 330px;
+    width: 350px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 330px;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
