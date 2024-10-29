@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link rel="shortcut icon" href="dice.ico" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <button onclick="generate()">Generate</button>
+        <p>Generated value: <span id="x"></span></p>
+        <button id="b" onclick="completed()">Completed</button>
+    </div>
+    <div style="margin: 30px;">
+        <table>
+            <h3>Previous record</h3>
+            <thead>
+                <tr>
+                    <th>DateTime</th>
+                    <th>Activity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
