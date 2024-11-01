@@ -14,21 +14,41 @@
         <ul>
             <li>h1-h6</li>
             <li>p</li>
-            <li>ul/ol: li</li>
+            <li>ul/ol/dl: li, dt, dd</li>
             <li>img</li>
             <li>div: as a container for other elements, allowing you to group them together and apply styles</li>
             <li>span: to apply styles or behaviors to a specific part of a text without affecting the surrounding content</li>
-            <li>form: input, label, textarea, select, option</li>
-            <li>table: thead, tbody, tr, th, td</li>
+            <li>form: input, label, textarea, select, option, fieldset, datalist</li>
+            <li>table: thead, tbody, tfoot, tr, th, td</li>
             <li>structure: html, head, body, link, meta, title</li>
-            <li>semantic: header, footer, main, nav, section, article, aside</li>
+            <li>semantic: header, footer, main, nav, section, article, aside, address, abbr, blockquote, code, cite, kbd, dfn, time, var, samp, q</li>
             <li>text formatting: b, i, em, del, ins, sup, sub</li>
+            <li>iframe: to load another html page into current one - inline frame</li>
+            <li>button: to trigger an event that happens on clicking</li>
+            <li>noscript: to show alternative text if JavaScript is disabled or unsupported in the browser, the markup and style still does load</li>
+            <li>video/audio: embed video and audio file into the page</li>
+            <li>pre: keeps text formatting (indenting) as it is in the html code</li>
+            <li>cite: represent the title of a work</li>
+            <li>fieldset + legend: groups related elements in a form and legend is for specifying what these fields are for</li>
+            <li>datalist: input + dropdown</li>
+            <li>figure + figcaption: represents self-contained content with caption</li>
+            <li>bdo: overrides current text direction</li>
+            <li>big: text inside is one font size larger</li>
+            <li>kbd: specifying keyboard input</li>
+            <li>dfn: defining instance of a term</li>
+            <li>map: defines clickable image map (defined clickable area within image)</li>
+            <li>var: variable in math expression</li>
+            <li>time: represents specific time</li>
+            <li>samp: sample output from computer text</li>
+            <li>q: short inline quotation</li>
+            <li>output: result of a calculation in form</li>
+            <li>object: embeds an external resource such as plugin</li>
         </ul>
 
         <p>Types of tags</p>
         <ul>
             <li>Block: address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1-h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video</li>
-            <li>Inline: a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var</li>
+            <li>Inline: a, abbr, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var</li>
         </ul>
 
         <p>Headings</p>
@@ -128,6 +148,43 @@
                 </tr>
             </tbody>
         </table>
+
+        <p>The result is: <samp>42</samp></p>
+
+        <figure>
+            <img src="./assets/image.png" alt="Description">
+            <figcaption>This is a caption for the image.</figcaption>
+        </figure>
+
+        <bdo dir="rtl">This text will be displayed right-to-left.</bdo>
+
+        <img src="./assets/image.png" usemap="#pmap" alt="Po">
+        <map name="pmap">
+            <area shape="rect" coords="34,44,270,350" alt="Mercury" href="https://google.com">
+        </map>
+
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50"> +
+            <input type="number" id="b" value="50">
+            = <output name="result" for="a b">100</output>
+        </form>
+
+        <h3>Embedding a PDF</h3>
+        <object data="./assets/example.pdf" type="application/pdf" width="600" height="400">
+            <p>Your browser does not support PDFs. <a href="./assets/example.pdf">Download the PDF</a>.</p>
+        </object>
+
+        <video width="600" height="400" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
 
         <p>Events</p>
         <button onclick="call()">Click</button>

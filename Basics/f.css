@@ -1,7 +1,7 @@
 /*
     || CSS Properties ||
     // Layout
-    display: inline(d), inline-block, block
+    display: inline(d), inline-block, block, flex, grid
     position: static(d), relative, absolute, fixed
     top, right, bottom, left: (d=auto) 0px
     width, height: (d=auto) 0px
