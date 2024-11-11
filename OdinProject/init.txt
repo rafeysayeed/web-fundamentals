@@ -1,0 +1,91 @@
+types of web dev: front, back, full
+- front: ui/ux
+- back: auth, db, apis, middleware, logging, security, architecture, ...
+- full: front + back
+
+types of careers: large tech, startup, freelancer, consultant, non-tech
+- large tech: +stable, high-income+ -layoffs, tough- <profile, reach, technical, take-home, non-technical> X
+- freelancer: +flexible, high-income+ -uncertain- <profile, reach, communicate, deliver, manage, payment> Y
+- startup: +flexible, equity+ -low-pay, long hours, experience- <same as large tech> Y
+- consultant: +stable+ -low pay- <same as large tech> X
+- non-tech: +stable, less work+ -low pay, experience, slow progression- <same as large tech> X
+
+fundamental tools:
+- hardware: computer, internet
+- software: os/cmd, editor, browser, git, node, db (any)
+- sites: gmail, github, google, gpt
+
+mindset:
+- growth: can get better at anything with persistence and effort
+- learning methods: focus/diffuse mode
+- what to do when stuck: follow diagram, google, gpt, take a break, ask for help (discord, reddit, stackoverflow, ...)
+- using gpt can be bad
+  - erroneous info, new learners can't scrutinize good info from bad
+  - gaps in our learning creating confusion
+  - asking question is an important skill we miss if we use gpt too much
+  - talking about one's code is an important skill we miss if we use gpt too much
+  - gpts are designed to answer questions not help in developing research and problem-solving skills
+  - critical thinking is a skill missed out by getting answers to everything easily and you also don't remember them
+- consistent learning
+- pitfalls
+  - procrastination -> pomodoro
+  - not taking breaks -> pomodoro (don't look at screen, walk, journal, doodle, meditate)
+  - digital distractions (social media) -> turn off notifications
+  - physical distractions (tv) -> study in a focused area detached from the world
+  - rabbit holes -> stick to the plan and don't jump
+  - comparing self -> comparing self to past self not others
+  - counter-productive note-taking -> take notes that prompt for further research, get comfortable in reading docs
+
+tips for getting help
+- always provide code and surrounding context (code, error, terminal commands, server output, thought)
+- ask about problem at hand not the solution
+- don't mind if asked for more context
+- don't ask to ask, just ask
+- xy problem: users wants to do x, thinks y is solutions, ask for help with y (strange scenario), turns out y isn't even the solution for x
+- way to ask technical question:
+  - do your own research: google, gpt, docs, ...
+  - help yourself:
+    - its okay if you don't know something, go research for it
+    - follow the 3 steps of problem solving
+    - research sub problems
+    - examine error messages
+    - if following tutorial:
+      - recheck all the previous commands and steps
+      - check for typos
+      - check for current directories
+      - check for version and config mismatch
+    - rubber duck debugging: talk each line of code out aloud
+
+how to use google for better search
+- adjust time span in tools to get latest results
+- use quotations "" to target specific terms and phrases
+- use -word to exclude specified words
+- use site:site-url/sub-domain to search results from a specific site and sub-domain
+- other special characters with their functions
+  - *: Wild Card
+  - filetype: Search Specific File Types
+  - ~: Similar Results
+  - ..: Range of Numbers
+  - (cache:): Last Cached Version of a Webpage
+  - define: Definitions
+  - and, or, not: Logic Operators
+  - inurl: Search for URLs that Contain your Keyword
+
+how to build the skill of problem solving:
+- V. Anton Spraul: "Problem solving is writing an original program that performs a particular set of tasks and meets all stated constraints."
+- write lots and lots of code
+- steps of problem solving:
+  1. understand the problem
+    - until you can successfully understand the problem, you won't know what the solution is
+    - write the problem down in simple words in a way you're trying to explain it to someone
+  2. plan
+    - don't jump to code right away
+    - answer some questions first
+      - does the program have ui, what will it look like, what would the functionality be, sketch it out
+      - what inputs will the program have (user-input, else)
+      - what would be the expected output
+      - what steps are need to convert the input into desired output
+  3. pseudocode
+    - write program logic in natural language
+- divide and conquer: identify the subproblems into which the main problem can be broken into during problem solving steps
+  - start with the smallest
